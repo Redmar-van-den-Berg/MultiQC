@@ -15,7 +15,8 @@
   * Post-alignment ancient DNA analysis tool for MALT
 
 #### Module updates
-
+* **CCS**
+    * Add support for the json output format for CCS version 5
 * **Picard**
     * Add additional datasets to Picard Alignment Summary ([#1293](https://github.com/ewels/MultiQC/issues/1293))
 * **DRAGEN**
