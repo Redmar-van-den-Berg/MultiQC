@@ -129,6 +129,8 @@ def parse_reports(self):
             'id': 'picard_alignment_summary',
             'title': 'Picard: Alignment Summary',
             'ylab': None,
+            'cpswitch': False,
+            'tt_percentages': False,
             'data_labels': [
                 {
                     'name': 'Aligned Reads',
