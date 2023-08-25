@@ -418,7 +418,7 @@ humid/counts:
   fn: "counts.dat"
   contents_re: "[0-9]+ [0-9]+"
   num_lines: 1
-humid/clusters.dat:
+humid/clusters:
   fn: "clusters.dat"
   contents_re: "[0-9]+ [0-9]+"
   num_lines: 1
