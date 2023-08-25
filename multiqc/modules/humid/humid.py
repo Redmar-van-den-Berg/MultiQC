@@ -8,7 +8,7 @@ from multiqc.modules.base_module import BaseMultiqcModule
 log = logging.getLogger(__name__)
 
 # Import HUMID submodules
-from . import stats
+from . import stats, neighbours
 
 class MultiqcModule(BaseMultiqcModule):
     def __init__(self):
@@ -21,11 +21,15 @@ class MultiqcModule(BaseMultiqcModule):
             # No publication / DOI // doi=
         )
         self.stats = None
+        self.neighbours = None
 
         # Look for stats files
         stats.parse_reports(self)
 
-        if all(not(x) for x in [self.stats]):
+        # Look for neighbour files
+        neighbours.parse_reports(self)
+
+        if all(not(x) for x in [self.stats, self.neighbours]):
             raise UserWarning
 
 
