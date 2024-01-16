@@ -55,7 +55,7 @@ def add_to_humid_section(self):
         anchor="humid-cluster-section",
         description="""
             Cluster statistics per sample. For every cluster in the trie,
-            the size (including mismatches) has been determined.
+            the number of reads that fall into this cluster are shown.
             """,
-        plot=linegraph.plot(self.clusters, plot_config),
+        plot=linegraph.plot(self.counts, plot_config),
     )

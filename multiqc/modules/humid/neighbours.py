@@ -55,7 +55,7 @@ def add_to_humid_section(self):
         anchor="humid-neighbour-section",
         description="""
             Neighbour statistics per sample. For every unique read in the input data,
-            the number of neighbours in the graph has been determined.
+            this shows the number of neighbours in the graph.
             """,
         plot=linegraph.plot(self.neighbours, plot_config),
     )

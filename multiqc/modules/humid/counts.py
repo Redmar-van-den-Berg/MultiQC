@@ -52,8 +52,9 @@ def add_to_humid_section(self):
         name="Counts statistics",
         anchor="humid-count-section",
         description="""
-            Count statistics per sample. For every node in the trie, we count the
-            number of reads that match exactly.
+            Count statistics per sample. This shows the number of times every
+            read has been seen (reads must always match exactly to be
+            counted here.)
             """,
         plot=linegraph.plot(self.counts, plot_config),
     )
